@@ -9,12 +9,25 @@ public class Prob04 {
 		printCharArray( c2 );
 	}
 	
+	
 	public static char[] reverse(String str) {
-		/* 코드를 완성합니다 */
-		return null;
+		char[] reverseChar = new char[20];;
+		int num = 0;
+		
+		for(int i = str.length() - 1 ; i >= 0 ; --i) {
+			reverseChar[num] = str.charAt(i);
+			++num;
+		}
+		return reverseChar;
 	}
 
+	
+	
 	public static void printCharArray(char[] array){
-		/* 코드를 완성합니다 */
+		
+		for(int i = 0; i< array.length; ++i) {
+			System.out.print(array[i]);
+		}
+		System.out.println();
 	}
 }
